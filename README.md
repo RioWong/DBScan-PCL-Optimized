@@ -36,7 +36,7 @@ It was modified with:
 
 in the main folder:
 
-    - cd build  
+    - cd build/  
     - cmake ../
     - make
        
