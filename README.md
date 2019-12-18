@@ -44,18 +44,19 @@ in the main folder:
 ### Test
 
     cd /build/bin
-    ./dbscan <pcd file> <octree resolution> <eps> <min Aux Pts> <min Pts> <output dir> <output extension (optional)>
+    ./dbscan <input file>       <-- This will run a fast testing with default parameters
+    ./dbscan <input file> <octree resolution> <eps> <min Aux Pts> <min Pts> <output dir> <output extension (optional)>
     
-    pcd file = path to point_cloud.pcd
+    input file = path to input point_cloud (.pcd .txt .ply .xyz)
     octree resolution = 124
     eps = 40
     min Pts = 4
     max Pts = 5
-    output dir = path to save
-    output extension (optional) = pcd (default) --> you can set ply, txt or xyz
+    output dir = path to output clusters
+    output extension (optional) = pcd, ply, txt or xyz
     
     Example:
-    ./dbscan /home/xXx/Downloads/point_cloud.pcd 124 40 5 5 /home/xXx/Downloads/clusters     
+    ./dbscan /home/xXx/Downloads/point_cloud.pcd 124 40 5 5 /home/xXx/Downloads/clusters ply     
     
     ¡You can modify the parameters to obtain better results!
     I recommend modifying only the eps value, with 40 - 60 you can get better clusters.
