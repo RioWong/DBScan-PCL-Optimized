@@ -43,7 +43,7 @@ in the main folder:
         	 
 ### Test
 
-    cd /build/bin
+    cd build/bin
     ./dbscan <input file>       <-- This will run a fast testing with default parameters
     ./dbscan <input file> <octree resolution> <eps> <min Aux Pts> <min Pts> <output dir> <output extension (optional)>
     
